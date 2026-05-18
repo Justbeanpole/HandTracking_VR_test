@@ -84,6 +84,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Leap grab Functions")
 	void LeapUnPinchCall(const FLeapHandData& HandData);
 
+	/**
+	 * MediaPipe와의 연동을 위해 21개의 손 랜드마크(관절) 좌표를 배열로 반환합니다.
+	 * 0: Wrist, 1~4: Thumb, 5~8: Index, 9~12: Middle, 13~16: Ring, 17~20: Pinky
+	 * @return 손이 인식되어 랜드마크를 가져왔는지 여부
+	 */
+	UFUNCTION(BlueprintCallable, Category = "MediaPipe Interface")
+	bool GetMediaPipeHandLandmarks(EHandType HandType, TArray<FVector>& OutLandmarks);
+
 	bool GetUseOpenXR();
 
 	void SetUseOpenXR(bool UseXR);
@@ -104,4 +112,7 @@ private:
 	bool bUseDeviceOrigin;
 
 	APawn* LeapPawn;
+
+	// 가장 최근 프레임 데이터를 저장하여 랜드마크 쿼리 시 활용합니다.
+	FLeapFrameData LatestFrameData;
 };
