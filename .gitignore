@@ -1,0 +1,53 @@
+# ==========================================
+# Unreal Engine Standard gitignore
+# ==========================================
+
+# Host OS folders
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Unreal Engine Build/Intermediate Folders
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Unreal Engine Plugin generated Folders
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# User configurations
+Config/User*.ini
+
+# IDE & Project files
+.vs/
+*.sln
+*.sdf
+*.opensdf
+*.suo
+*.vc.db
+*.VC.db
+*.VC.opendb
+*.layout
+*.workspace
+*.swp
+*.ninja
+.idea/
+.vscode/
+
+# macOS Xcode files (if generating Xcode projects)
+*.xcodeproj/
+*.xcworkspace/
+
+# C++ Compilation files
+*.obj
+*.pdb
+*.ilk
+*.aps
+*.opendb
