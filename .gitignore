@@ -20,7 +20,9 @@ Plugins/UltraleapTracking/
 
 # ---- 파이썬 (별도 저장소: github.com/ansgustn/handtracking) ----
 # venv 1GB, 데이터셋/모델 수 GB, 100MB 초과 파일 다수라 제외한다.
-Scripts/
+# 단, BP_Knob 을 구동하는 OSC 송신 스크립트 하나는 포함한다 (이게 없으면 노브가 안 돈다).
+Scripts/*
+!Scripts/mediapipe_knob_osc.py
 
 # ---- 중첩된 옛 프로젝트 사본 (2025-05-19 스냅샷) ----
 # github.com/Justbeanpole/HandTracking_VR_test 로 이미 올라간 낡은 복사본.
