@@ -231,13 +231,10 @@ python -c "from pygrabber.dshow_graph import FilterGraph; [print(i,n) for i,n in
 | 제외 항목 | 크기 | 대응 |
 |---|---|---|
 | `Plugins/UltraleapTracking/` | 620MB | 마켓플레이스에서 설치 (2-2) |
-| `Scripts/` (venv, 데이터셋, 모델) | 6GB | 아래 참조 |
+| `Scripts/` (venv, 데이터셋, 모델) | 6GB | 2-3 대로 새로 만든다 |
 | `Intermediate/` `Binaries/` `Saved/` | 4GB | UE가 자동 생성 |
 
 **예외**: `Scripts/mediapipe_knob_osc.py` 하나만 포함했다. 이게 없으면 노브가 아예 안 돈다.
-
-Kinect 2대 융합 버전, 모델 성능 비교(RTMPose·FreiHAND) 스크립트, 학습 데이터셋은
-별도 저장소에 있다: https://github.com/ansgustn/handtracking
 
 ---
 
