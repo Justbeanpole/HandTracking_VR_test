@@ -24,6 +24,13 @@ Plugins/UltraleapTracking/
 Scripts/*
 !Scripts/mediapipe_knob_osc.py
 
+# 파이썬 가상환경 (어느 위치에 만들든 제외)
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
 # ---- 중첩된 옛 프로젝트 사본 (2025-05-19 스냅샷) ----
 # github.com/Justbeanpole/HandTracking_VR_test 로 이미 올라간 낡은 복사본.
 # 현재 작업본은 루트 쪽이다.
