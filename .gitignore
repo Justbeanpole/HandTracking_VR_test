@@ -1,0 +1,70 @@
+# ==========================================
+# Unreal Engine 5 - HandInteraction
+# ==========================================
+
+# ---- Unreal 생성물 (클론 후 UE가 자동 재생성한다) ----
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# 플러그인 생성물
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+
+# ---- 마켓플레이스 플러그인 (저장소에서 제외) ----
+# UltraleapTracking 은 에픽 마켓플레이스에서 무료로 재설치한다.
+# 클론 후: 마켓플레이스에서 "Ultraleap Tracking" 설치 → 프로젝트 Plugins/ 에 배치
+Plugins/UltraleapTracking/
+
+# ---- 파이썬 (별도 저장소: github.com/ansgustn/handtracking) ----
+# venv 1GB, 데이터셋/모델 수 GB, 100MB 초과 파일 다수라 제외한다.
+Scripts/
+
+# ---- 중첩된 옛 프로젝트 사본 (2025-05-19 스냅샷) ----
+# github.com/Justbeanpole/HandTracking_VR_test 로 이미 올라간 낡은 복사본.
+# 현재 작업본은 루트 쪽이다.
+/HandInteraction/
+
+# ---- 사용자 설정 ----
+Config/User*.ini
+
+# Claude Code 로컬 설정 (PC마다 다름)
+.claude/settings.local.json
+
+# 빈 임시 파일
+out.txt
+
+# ---- IDE / 빌드 파일 ----
+.vs/
+.idea/
+.vscode/
+*.sln
+*.sdf
+*.opensdf
+*.suo
+*.vc.db
+*.VC.db
+*.VC.opendb
+*.layout
+*.workspace
+*.swp
+*.ninja
+
+# ---- C++ 컴파일 산출물 ----
+*.obj
+*.pdb
+*.ilk
+*.aps
+*.opendb
+*.pch
+
+# ---- OS ----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
